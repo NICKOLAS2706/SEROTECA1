@@ -1,0 +1,20 @@
+<p-table 
+        [value]="listOrden" 
+        styleClass="p-datatable-gridlines" 
+        [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{ product.posicionColumna }}</td>
+                    <td>{{ product.posicionFila }}</td>
+                    <td>{{ product.numero }}</td>
+                </tr>
+            </ng-template>
+    </p-table>
